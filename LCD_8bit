@@ -38,8 +38,7 @@ void main(void) {
 
 void lcd_init()
 {
-    //lcd_cmd(0x38);                 // 2 line, 8 bit, 5x7 dots
-    lcd_cmd(0x20);                  //4bit mode
+    lcd_cmd(0x38);                 // 2 line, 8 bit, 5x7 dots
     delay(30);
     lcd_cmd(0x0F);                 //display on, cursor blink
     delay(30);
