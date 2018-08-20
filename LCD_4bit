@@ -1,0 +1,87 @@
+#pragma config OSC=INTIO67, LVP=OFF, WDT=OFF, PBADEN=OFF
+
+#include <xc.h>
+#include<p18f4520.h>
+
+#define rs PORTCbits.RC0
+#define rw PORTCbits.RC1
+#define en PORTCbits.RC2
+
+char myString[10]={"hello"};
+
+void lcd_init();
+void lcd_data(char data);
+void lcd_cmd(char cmd);
+void strobe();
+void delay(unsigned int time);
+
+void main(void) {
+    
+    TRISCbits.TRISC0=0;             //rs
+    TRISCbits.TRISC1=0;             //rw
+    TRISCbits.TRISC2=0;             //wn
+    TRISD=0x00;
+    PORTD=0x00;
+    
+    en=0;
+    rw=0;
+    lcd_init();
+    
+    for(int i=0;i<5;i++)
+    {
+        lcd_data(myString[i]);
+        delay(20);
+    }
+    
+    return;
+}
+
+void lcd_init()
+{
+    //lcd_cmd(0x38);                 // 2 line, 8 bit, 5x7 dots
+    lcd_cmd(0x20);                  //4bit mode
+    delay(30);
+    lcd_cmd(0x0F);                 //display on, cursor blink
+    delay(30);
+    lcd_cmd(0x01);                 //clear lcd
+    delay(30);
+    lcd_cmd(0x06);                 //Entry mode, auto increment with no shift
+    delay(30);
+    
+}
+
+void lcd_cmd(char cmd)
+{
+    rs=0;
+    PORTD= cmd & 0xF0;
+    strobe();
+    delay(5);
+    PORTD= (cmd<<4) & 0xF0;
+    strobe();
+    delay(5);
+}
+
+void lcd_data(char data)
+{
+    rs=1;
+    PORTD= data & 0xF0;
+    strobe();
+    delay(5);
+    PORTD= (data<<4) & 0xF0;
+    strobe();
+    delay(5);
+}
+
+void strobe()
+{
+    en=1;
+    delay(20);
+    en=0;
+}
+
+void delay(unsigned int time)
+{
+   unsigned int i,j;
+   for(i=0;i<time;i++)
+       for(j=0;j<165;j++);
+}
