@@ -78,7 +78,7 @@ void strobe()
 /***************************************A word on busy flag**************************************
  * while reading busy flag the RS should be in command mode i.e. 0
  * Enable pin should be continuously pulled high at the time of reading busy flag
- * Enjoy Waiting while someone's busy doing stuff and DO NOT DISTURB!!!!
+ * Enjoy Waiting while someone's busy doing stuff and yes DO NOT DISTURB!!!!
  */
 
 void busyFlag()
