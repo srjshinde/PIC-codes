@@ -1,0 +1,100 @@
+#pragma config OSC=INTIO67, LVP=OFF, WDT=OFF, PBADEN=OFF
+
+#include <xc.h>
+#include<p18f4520.h>
+
+#define rs PORTCbits.RC0
+#define rw PORTCbits.RC1
+#define en PORTCbits.RC2
+#define bf PORTDbits.RD7
+
+char myString[14]={"hello suraj!!!"};
+
+void lcd_init();
+void lcd_data(char data);
+void lcd_cmd(char cmd);
+void strobe();
+void busyFlag();
+void delay(unsigned int time);
+
+void main(void) {
+    
+    TRISCbits.TRISC0=0;             //rs
+    TRISCbits.TRISC1=0;             //rw
+    TRISCbits.TRISC2=0;             //wn
+    TRISD=0x00;
+    PORTD=0x00;
+    
+    en=0;
+    rw=0;
+    lcd_init();
+    delay(20);
+    
+    for(int i=0;i<14;i++)
+    {
+        lcd_data(myString[i]);
+    }
+    while(1);
+    return;
+}
+
+void lcd_init()
+{
+    lcd_cmd(0x38);                 // 2 line, 8 bit, 5x7 dots
+    //lcd_cmd(0x20);                  //4bit mode
+    delay(30);
+    lcd_cmd(0x0F);                 //display on, cursor blink
+    delay(30);
+    lcd_cmd(0x01);                 //clear lcd
+    delay(30);
+    lcd_cmd(0x06);                 //Entry mode, auto increment with no shift
+    delay(30);
+    
+}
+
+void lcd_cmd(char cmd)
+{
+    rs=0;
+    PORTD= cmd ;
+    strobe();
+    busyFlag();
+}
+
+void lcd_data(char data)
+{
+    rs=1;
+    PORTD= data;
+    strobe();
+    busyFlag();
+    
+}
+
+void strobe()
+{
+    en=1;
+    delay(20);
+    en=0;
+}
+/***************************************A word on busy flag**************************************
+ * while reading busy flag the RS should be in command mode i.e. 0
+ * Enable pin should be continuously pulled high at the time of reading busy flag
+ * Enjoy Waiting while someone's busy doing stuff and DO NOT DISTURB!!!!
+ */
+
+void busyFlag()
+{
+    rs=0;
+    rw=1;
+    TRISDbits.TRISD7=1;
+    en=1;
+    while(bf==1);
+    rw=0;
+    TRISDbits.TRISD7=0;
+}
+
+void delay(unsigned int time)
+{
+   unsigned int i,j;
+   for(i=0;i<time;i++)
+       for(j=0;j<165;j++);
+}
