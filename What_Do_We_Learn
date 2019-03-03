@@ -4,3 +4,4 @@ important points to remember
 ****************************************************************************************************************************************/
 
 1. set the osccon register to use 8MHz internal clock or it will operate on 1MHz only.
+2. always make use of power up timer. It is a life saver when dealing with initial clock glitches.
