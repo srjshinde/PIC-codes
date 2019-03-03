@@ -1,19 +1,20 @@
-#pragma config OSC=INTIO67, LVP=OFF, WDT=OFF, PBADEN=OFF
+#pragma config OSC=INTIO67, LVP=OFF, WDT=OFF, PBADEN=OFF, PWRT=ON
 
 #include <xc.h>
-#include<p18f4520.h>
+//#include<p18f4520.h>
 
 #define rs PORTCbits.RC0
 #define rw PORTCbits.RC1
 #define en PORTCbits.RC2
 
-char myString[10]={"hello"};
+char myString[13]={"GOOD morning"};
 
 void lcd_init();
 void lcd_data(char data);
 void lcd_cmd(char cmd);
 void strobe();
 void delay(unsigned int time);
+void send2lcd(char *lcd_string);
 
 void main(void) {
     
@@ -27,7 +28,7 @@ void main(void) {
     rw=0;
     lcd_init();
     
-    for(int i=0;i<5;i++)
+    for(int i=0;i<13;i++)
     {
         lcd_data(myString[i]);
         delay(20);
@@ -75,4 +76,14 @@ void delay(unsigned int time)
    unsigned int i,j;
    for(i=0;i<time;i++)
        for(j=0;j<165;j++);
+}
+
+void send2lcd(char *lcd_string)
+{
+    while (*lcd_string != '\0')
+    {
+        lcd_data(*lcd_string);
+        lcd_string++;
+        delay(20);
+    }
 }
