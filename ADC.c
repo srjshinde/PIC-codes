@@ -3,7 +3,7 @@
  * author: Suraj shinde
  */
 
-#pragma config OSC=INTIO67, LVP=OFF, WDT=OFF, PBADEN=OFF    //config bits
+#pragma config OSC=INTIO67, LVP=OFF, WDT=OFF, PBADEN=OFF,PWRT=ON    //config bits
 
 
 #include<xc.h>                                              //compiler library
