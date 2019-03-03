@@ -1,0 +1,1 @@
+#pragma config OSC=INTIO67, LVP=OFF, WDT=OFF, PBADEN=OFF,PWRT=ON    //config bits
