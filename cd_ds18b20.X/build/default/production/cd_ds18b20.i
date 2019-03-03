@@ -8,7 +8,7 @@
 # 2 "<built-in>" 2
 # 1 "cd_ds18b20.c" 2
 # 11 "cd_ds18b20.c"
-#pragma config OSC=INTIO67, LVP=OFF, WDT=OFF, PBADEN=OFF
+#pragma config OSC=INTIO67, LVP=OFF, WDT=OFF, PBADEN=OFF, PWRT=ON
 
 
 

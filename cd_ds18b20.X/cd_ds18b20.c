@@ -8,7 +8,7 @@
 /*
  * Configuration Related settings. Specific for microcontroller unit.
  */
-#pragma config OSC=INTIO67, LVP=OFF, WDT=OFF, PBADEN=OFF
+#pragma config OSC=INTIO67, LVP=OFF, WDT=OFF, PBADEN=OFF, PWRT=ON
 #define _XTAL_FREQ 8000000
 /*
  * System Header files inclusions

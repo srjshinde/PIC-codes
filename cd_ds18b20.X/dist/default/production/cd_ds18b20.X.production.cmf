@@ -11,7 +11,7 @@
 # All addresses and the length are given in unqualified hexadecimal
 # in delta units.  Any other numeric values are decimal.
 %PSECTS
-$C:\Users\suraj\AppData\Local\Temp\seug.o
+$C:\Users\suraj\AppData\Local\Temp\sd94.o
 idloc IDLOC 0 200000 200000 8 1
 init CODE 0 0 0 4 1
 config CONFIG 0 300000 300000 E 1
@@ -599,22 +599,22 @@ B4A text0 CODE >186:C:\Users\suraj\MPLABXProjects\cd_ds18b20.X\cd_ds18b20.c
 B50 text0 CODE >187:C:\Users\suraj\MPLABXProjects\cd_ds18b20.X\cd_ds18b20.c
 B72 text0 CODE >188:C:\Users\suraj\MPLABXProjects\cd_ds18b20.X\cd_ds18b20.c
 B78 text0 CODE >189:C:\Users\suraj\MPLABXProjects\cd_ds18b20.X\cd_ds18b20.c
-194C cinit CODE >1091:C:\Users\suraj\AppData\Local\Temp\seug.
-194C cinit CODE >1093:C:\Users\suraj\AppData\Local\Temp\seug.
-194C cinit CODE >1096:C:\Users\suraj\AppData\Local\Temp\seug.
-194C cinit CODE >1116:C:\Users\suraj\AppData\Local\Temp\seug.
-1950 cinit CODE >1117:C:\Users\suraj\AppData\Local\Temp\seug.
-1952 cinit CODE >1118:C:\Users\suraj\AppData\Local\Temp\seug.
-1952 cinit CODE >1119:C:\Users\suraj\AppData\Local\Temp\seug.
-1954 cinit CODE >1120:C:\Users\suraj\AppData\Local\Temp\seug.
-1956 cinit CODE >1121:C:\Users\suraj\AppData\Local\Temp\seug.
-1958 cinit CODE >1127:C:\Users\suraj\AppData\Local\Temp\seug.
-1958 cinit CODE >1130:C:\Users\suraj\AppData\Local\Temp\seug.
-195A cinit CODE >1131:C:\Users\suraj\AppData\Local\Temp\seug.
-195C cinit CODE >1132:C:\Users\suraj\AppData\Local\Temp\seug.
-195E cinit CODE >1133:C:\Users\suraj\AppData\Local\Temp\seug.
-1960 cinit CODE >1134:C:\Users\suraj\AppData\Local\Temp\seug.
-1962 cinit CODE >1135:C:\Users\suraj\AppData\Local\Temp\seug.
+194C cinit CODE >1093:C:\Users\suraj\AppData\Local\Temp\sd94.
+194C cinit CODE >1095:C:\Users\suraj\AppData\Local\Temp\sd94.
+194C cinit CODE >1098:C:\Users\suraj\AppData\Local\Temp\sd94.
+194C cinit CODE >1118:C:\Users\suraj\AppData\Local\Temp\sd94.
+1950 cinit CODE >1119:C:\Users\suraj\AppData\Local\Temp\sd94.
+1952 cinit CODE >1120:C:\Users\suraj\AppData\Local\Temp\sd94.
+1952 cinit CODE >1121:C:\Users\suraj\AppData\Local\Temp\sd94.
+1954 cinit CODE >1122:C:\Users\suraj\AppData\Local\Temp\sd94.
+1956 cinit CODE >1123:C:\Users\suraj\AppData\Local\Temp\sd94.
+1958 cinit CODE >1129:C:\Users\suraj\AppData\Local\Temp\sd94.
+1958 cinit CODE >1132:C:\Users\suraj\AppData\Local\Temp\sd94.
+195A cinit CODE >1133:C:\Users\suraj\AppData\Local\Temp\sd94.
+195C cinit CODE >1134:C:\Users\suraj\AppData\Local\Temp\sd94.
+195E cinit CODE >1135:C:\Users\suraj\AppData\Local\Temp\sd94.
+1960 cinit CODE >1136:C:\Users\suraj\AppData\Local\Temp\sd94.
+1962 cinit CODE >1137:C:\Users\suraj\AppData\Local\Temp\sd94.
 # %SYMTAB Section
 # An enumeration of all symbols in the program.
 # The beginning of the section is indicated by %SYMTAB.
@@ -638,16 +638,16 @@ __size_of_lcd_bcd 0 0 ABS 0 - dist/default/production\cd_ds18b20.X.production.o
 __size_of_lcd_com 0 0 ABS 0 - dist/default/production\cd_ds18b20.X.production.o
 __end_of_write_byte 17A2 0 CODE 0 text1 dist/default/production\cd_ds18b20.X.production.o
 __Hibigdata 0 0 CODE 0 ibigdata dist/default/production\cd_ds18b20.X.production.o
-__mediumconst 0 0 MEDIUMCONST 0 mediumconst C:\Users\suraj\AppData\Local\Temp\seug.o
+__mediumconst 0 0 MEDIUMCONST 0 mediumconst C:\Users\suraj\AppData\Local\Temp\sd94.o
 delay@i 3 0 COMRAM 1 cstackCOMRAM dist/default/production\cd_ds18b20.X.production.o
 delay@j 1 0 COMRAM 1 cstackCOMRAM dist/default/production\cd_ds18b20.X.production.o
 __Heeprom_data 0 0 EEDATA 0 eeprom_data dist/default/production\cd_ds18b20.X.production.o
 main@i 50 0 COMRAM 1 cstackCOMRAM dist/default/production\cd_ds18b20.X.production.o
 main@t 4E 0 COMRAM 1 cstackCOMRAM dist/default/production\cd_ds18b20.X.production.o
 __Lsmallconst 600 0 SMALLCONST 0 smallconst dist/default/production\cd_ds18b20.X.production.o
-___sp 0 0 STACK 2 stack C:\Users\suraj\AppData\Local\Temp\seug.o
+___sp 0 0 STACK 2 stack C:\Users\suraj\AppData\Local\Temp\sd94.o
 _main 64C 0 CODE 0 text0 dist/default/production\cd_ds18b20.X.production.o
-start 0 0 CODE 0 init C:\Users\suraj\AppData\Local\Temp\seug.o
+start 0 0 CODE 0 init C:\Users\suraj\AppData\Local\Temp\sd94.o
 ___flmul@aexp 20 0 COMRAM 1 cstackCOMRAM dist/default/production\cd_ds18b20.X.production.o
 ___flmul@bexp 21 0 COMRAM 1 cstackCOMRAM dist/default/production\cd_ds18b20.X.production.o
 ___flmul@prod 22 0 COMRAM 1 cstackCOMRAM dist/default/production\cd_ds18b20.X.production.o
@@ -666,11 +666,11 @@ __HbssCOMRAM 0 0 ABS 0 bssCOMRAM dist/default/production\cd_ds18b20.X.production
 __Hpowerup 0 0 CODE 0 powerup dist/default/production\cd_ds18b20.X.production.o
 lcd_bcd@ui_decimal 34 0 COMRAM 1 cstackCOMRAM dist/default/production\cd_ds18b20.X.production.o
 lcd_com@temp 6 0 COMRAM 1 cstackCOMRAM dist/default/production\cd_ds18b20.X.production.o
-__accesstop 80 0 ABS 0 - C:\Users\suraj\AppData\Local\Temp\seug.o
-intlevel0 0 0 CODE 0 text C:\Users\suraj\AppData\Local\Temp\seug.o
-intlevel1 0 0 CODE 0 text C:\Users\suraj\AppData\Local\Temp\seug.o
-intlevel2 0 0 CODE 0 text C:\Users\suraj\AppData\Local\Temp\seug.o
-intlevel3 0 0 CODE 0 text C:\Users\suraj\AppData\Local\Temp\seug.o
+__accesstop 80 0 ABS 0 - C:\Users\suraj\AppData\Local\Temp\sd94.o
+intlevel0 0 0 CODE 0 text C:\Users\suraj\AppData\Local\Temp\sd94.o
+intlevel1 0 0 CODE 0 text C:\Users\suraj\AppData\Local\Temp\sd94.o
+intlevel2 0 0 CODE 0 text C:\Users\suraj\AppData\Local\Temp\sd94.o
+intlevel3 0 0 CODE 0 text C:\Users\suraj\AppData\Local\Temp\sd94.o
 __LbssCOMRAM 0 0 ABS 0 bssCOMRAM dist/default/production\cd_ds18b20.X.production.o
 _OSCCONbits FD3 0 ABS 0 - dist/default/production\cd_ds18b20.X.production.o
 __LnvFARRAM 0 0 FARRAM 0 nvFARRAM dist/default/production\cd_ds18b20.X.production.o
@@ -683,8 +683,8 @@ main@difference1 40 0 COMRAM 1 cstackCOMRAM dist/default/production\cd_ds18b20.X
 main@difference2 44 0 COMRAM 1 cstackCOMRAM dist/default/production\cd_ds18b20.X.production.o
 __end_of_lcd_bcd 1358 0 CODE 0 text7 dist/default/production\cd_ds18b20.X.production.o
 __end_of_lcd_com 1704 0 CODE 0 text9 dist/default/production\cd_ds18b20.X.production.o
-___inthi_sp 0 0 STACK 2 stack C:\Users\suraj\AppData\Local\Temp\seug.o
-___intlo_sp 0 0 STACK 2 stack C:\Users\suraj\AppData\Local\Temp\seug.o
+___inthi_sp 0 0 STACK 2 stack C:\Users\suraj\AppData\Local\Temp\sd94.o
+___intlo_sp 0 0 STACK 2 stack C:\Users\suraj\AppData\Local\Temp\sd94.o
 __Hintcode_body 0 0 ABS 0 intcode_body dist/default/production\cd_ds18b20.X.production.o
 __end_of___flge 1568 0 CODE 0 text19 dist/default/production\cd_ds18b20.X.production.o
 __end_of___wmul 190C 0 CODE 0 text14 dist/default/production\cd_ds18b20.X.production.o
@@ -746,7 +746,7 @@ lcd_com@a 5 0 COMRAM 1 cstackCOMRAM dist/default/production\cd_ds18b20.X.product
 __size_of___xxtofl 0 0 ABS 0 - dist/default/production\cd_ds18b20.X.production.o
 __Hbigbss 0 0 BIGRAM 1 bigbss dist/default/production\cd_ds18b20.X.production.o
 __Hbigram 0 0 ABS 0 bigram dist/default/production\cd_ds18b20.X.production.o
-__smallconst 600 0 SMALLCONST 0 smallconst C:\Users\suraj\AppData\Local\Temp\seug.o
+__smallconst 600 0 SMALLCONST 0 smallconst C:\Users\suraj\AppData\Local\Temp\sd94.o
 ___xxtofl@arg B 0 COMRAM 1 cstackCOMRAM dist/default/production\cd_ds18b20.X.production.o
 ___xxtofl@exp A 0 COMRAM 1 cstackCOMRAM dist/default/production\cd_ds18b20.X.production.o
 ___xxtofl@val 1 0 COMRAM 1 cstackCOMRAM dist/default/production\cd_ds18b20.X.production.o
@@ -869,8 +869,8 @@ __Lfarbss 0 0 FARRAM 0 farbss dist/default/production\cd_ds18b20.X.production.o
 ___lwdiv@divisor 3 0 COMRAM 1 cstackCOMRAM dist/default/production\cd_ds18b20.X.production.o
 _status 66 0 COMRAM 1 bssCOMRAM dist/default/production\cd_ds18b20.X.production.o
 __Lfardata 0 0 FARRAM 0 fardata dist/default/production\cd_ds18b20.X.production.o
-stackhi 5FF 0 ABS 0 - C:\Users\suraj\AppData\Local\Temp\seug.o
-stacklo 80 0 ABS 0 - C:\Users\suraj\AppData\Local\Temp\seug.o
+stackhi 5FF 0 ABS 0 - C:\Users\suraj\AppData\Local\Temp\sd94.o
+stacklo 80 0 ABS 0 - C:\Users\suraj\AppData\Local\Temp\sd94.o
 __Lintcode 0 0 CODE 0 intcode dist/default/production\cd_ds18b20.X.production.o
 __Lintret 0 0 ABS 0 intret dist/default/production\cd_ds18b20.X.production.o
 __Lirdata 0 0 CODE 0 irdata dist/default/production\cd_ds18b20.X.production.o
@@ -921,7 +921,7 @@ __Ltext16 0 0 ABS 0 text16 dist/default/production\cd_ds18b20.X.production.o
 __Ltext17 0 0 ABS 0 text17 dist/default/production\cd_ds18b20.X.production.o
 __Ltext18 0 0 ABS 0 text18 dist/default/production\cd_ds18b20.X.production.o
 __Ltext19 0 0 ABS 0 text19 dist/default/production\cd_ds18b20.X.production.o
-__ramtop 600 0 RAM 0 ramtop C:\Users\suraj\AppData\Local\Temp\seug.o
+__ramtop 600 0 RAM 0 ramtop C:\Users\suraj\AppData\Local\Temp\sd94.o
 __Lpowerup 0 0 CODE 0 powerup dist/default/production\cd_ds18b20.X.production.o
 ?___xxtofl 1 0 COMRAM 1 cstackCOMRAM dist/default/production\cd_ds18b20.X.production.o
 __Leeprom_data 0 0 EEDATA 0 eeprom_data dist/default/production\cd_ds18b20.X.production.o
@@ -946,6 +946,7 @@ _lcd_init_write 1930 0 CODE 0 text6 dist/default/production\cd_ds18b20.X.product
 _write_byte 1756 0 CODE 0 text1 dist/default/production\cd_ds18b20.X.production.o
 _read_byte 1832 0 CODE 0 text2 dist/default/production\cd_ds18b20.X.production.o
 _pre_val 62 0 COMRAM 1 bssCOMRAM dist/default/production\cd_ds18b20.X.production.o
+__CFG_PWRT$ON 0 0 ABS 0 - dist/default/production\cd_ds18b20.X.production.o
 __end_of_main B86 0 CODE 0 text0 dist/default/production\cd_ds18b20.X.production.o
 __end_of_delay 1930 0 CODE 0 text10 dist/default/production\cd_ds18b20.X.production.o
 _PORTD F83 0 ABS 0 - dist/default/production\cd_ds18b20.X.production.o

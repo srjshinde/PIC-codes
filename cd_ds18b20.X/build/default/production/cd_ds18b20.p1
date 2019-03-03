@@ -84,7 +84,7 @@ Version 4.0 HI-TECH Software Intermediate Code
 [; ;./lcd.h: 4: void lcd_data(unsigned char a);
 [v _lcd_data `(v ~T0 @X0 0 ef1`uc ]
 "11 cd_ds18b20.c
-[p x OSC=INTIO67  LVP=OFF  WDT=OFF  PBADEN=OFF ]
+[p x OSC=INTIO67  LVP=OFF  WDT=OFF  PBADEN=OFF  PWRT=ON ]
 "54 C:\Program Files (x86)\Microchip\xc8\v2.05\pic\include\pic18f4520.h
 [; ;C:\Program Files (x86)\Microchip\xc8\v2.05\pic\include\pic18f4520.h: 54: __asm("PORTA equ 0F80h");
 [; <" PORTA equ 0F80h ;# ">
