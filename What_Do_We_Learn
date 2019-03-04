@@ -5,3 +5,6 @@ important points to remember
 
 1. set the osccon register to use 8MHz internal clock or it will operate on 1MHz only.
 2. always make use of power up timer. It is a life saver when dealing with initial clock glitches.
+3. delay is a very bad idea to be used with interrupts. learn to configure the interrupts properly.
+4. never do anything casually. a small change in lcd strobe delay can ruin the whole code. think twice beforyou implement anything in code.
+use timer delays whiere possible.
